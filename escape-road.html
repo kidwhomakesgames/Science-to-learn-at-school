@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape Road Game</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        #game-container { width: 600px; margin: 0 auto; }
+        #result { margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <div id="game-container">
+        <h1>Escape Road Game</h1>
+        <p>Your mission is to navigate through the maze without getting caught!</p>
+        <button id="start-game">Start Game</button>
+        <div id="result"></div>
+    </div>
+    <script>
+        document.getElementById('start-game').addEventListener('click', function() {
+            document.getElementById('result').innerText = 'Game started! Good luck!';
+            // Implement game logic here...
+        });
+    </script>
+</body>
+</html>
